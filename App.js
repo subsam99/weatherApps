@@ -35,7 +35,7 @@ export default class App extends Component {
 			.then(res => res.json())
 			.then(json => {
 				this.setState({
-          city: json.name,
+          				city: json.name,
 					temperature: json.main.temp,
 					weatherCondition: json.weather[0].main,
 					isLoading: false
