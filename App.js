@@ -7,7 +7,7 @@ import Geolocation from '@react-native-community/geolocation';
 export default class App extends Component {
 	state = {
 		isLoading: true,
-    city: null,
+    		city: null,
 		temperature: 0,
 		weatherCondition: null,
 		error: null
@@ -51,7 +51,7 @@ export default class App extends Component {
 					<Text>Fetching The Weather</Text>
 				) : (
 					<Weather
-            city={this.state.city}
+            					city={this.state.city}
 						weather={this.state.weatherCondition}
 						temperature={this.state.temperature}
 					/>
